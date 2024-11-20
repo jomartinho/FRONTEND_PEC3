@@ -9,3 +9,4 @@ Esta PEC consta de 4 ejercicios evaluables. Cada uno tiene como objetivo desarro
 ### Ejercicios realizados:
 1. **Ejercicio 1:** Comparación entre JavaScript y TypeScript. Se han enumerado las ventajas que aporta TypeScript sobre JavaScript.
 2. **Ejercicio 2:** Introducción a los primeros códigos en TypeScript, identificando cómo se infieren tipos y se manejan errores en tiempo de compilación.
+3. **Ejercicio 3:** Resolución de ejercicios prácticos usando TypeScript. Implementación de operaciones específicas descritas en el enunciado.
