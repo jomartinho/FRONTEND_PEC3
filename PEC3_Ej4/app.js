@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const todo_controller_1 = require("./controllers/todo.controller");
+const todo_service_1 = require("./services/todo.service");
+const todo_views_1 = require("./views/todo.views");
+const service = new todo_service_1.TodoService();
+const view = new todo_views_1.TodoView();
+const controller = new todo_controller_1.TodoController(service, view);
+controller.addTodo('Learn TypeScript');
+controller.addTodo('Build a TODO app');
+controller.toggleTodo('1');
+controller.deleteTodo('1');

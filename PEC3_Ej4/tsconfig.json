@@ -1,12 +1,12 @@
 {
-    "compilerOptions": {
-      "target": "es2015",
-      "module": "commonjs",
-      "outDir": "./dist",
-      "rootDir": "./",
-      "strict": true,
-      "esModuleInterop": true
-    },
-    "include": ["**/*.ts"],
-    "exclude": ["node_modules"]
-  }
+  "compilerOptions": {
+    "target": "es5", // Target ECMAScript version
+    "module": "commonjs", // Module system
+    "strict": true, // Enable strict type-checking
+    "outDir": "./dist", // Output directory
+    "rootDir": ".", // Set to the root of your project
+    "esModuleInterop": true // Allow interop between ES modules and CommonJS
+  },
+  "include": ["*.ts", "/**/*.ts", "controllers/**/*.ts", "models/**/*.ts", "services/**/*.ts", "views/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

@@ -4,14 +4,15 @@
  *
  * Manages the data of the application.
  */
-class Todo {
-    constructor({ text, complete } = { complete: false }) {
-        this.id = this.uuidv4();
-        this.text = text;
-        this.complete = complete;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.TodoModel = void 0;
+var TodoModel = /** @class */ (function () {
+    function TodoModel(id, title, completed) {
+        if (completed === void 0) { completed = false; }
+        this.id = id;
+        this.title = title;
+        this.completed = completed;
     }
-    uuidv4() {
-        return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c => (c ^
-            (crypto.getRandomValues(new Uint8Array(1))[0] & (15 >> (c / 4)))).toString(16));
-    }
-}
+    return TodoModel;
+}());
+exports.TodoModel = TodoModel;
